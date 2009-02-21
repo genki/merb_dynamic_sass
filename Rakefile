@@ -8,8 +8,8 @@ GEM_NAME = "merb_dynamic_sass"
 AUTHOR = "Yukiko Kawamoto"
 EMAIL = "yu0420@gmail.com"
 HOMEPAGE = "http://github.com/yukiko"
-SUMMARY = "Merb Dynamic Sass is a Merb Slice that provides ..."
-GEM_VERSION = "0.0.1"
+SUMMARY = "Merb Dynamic Sass is a Merb Slice that provides more handy way to use Sass engine."
+GEM_VERSION = "0.0.2"
 
 spec = Gem::Specification.new do |s|
   s.rubyforge_project = 'merb'
