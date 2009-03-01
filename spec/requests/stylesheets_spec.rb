@@ -7,6 +7,12 @@ describe "GET /stylesheets/filepath.css" do
     mount_slice
     @store = MerbDynamicSass.action_cache_store
     @file =  MerbDynamicSass.dir_for(:view) / :stylesheets / "basic.css.erb"
+    
+    # This direcotry is necessary for this test.
+    template_dir = MerbDynamicSass.dir_for(:view) / :stylesheets
+    unless File.directory? template_dir
+      FileUtils.mkdir_p template_dir
+    end
 
     # Create a template file
     @store.send :write_file, @file, <<-CONTENT
