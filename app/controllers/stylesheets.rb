@@ -22,8 +22,6 @@ class MerbDynamicSass::Stylesheets < MerbDynamicSass::Application
   end
 
 
-  # TODO the rest is that prividing the way to generate file under the document root
-  # by useing slice.page_cache_store.
   def index
     @template_path = params[:path]
     if self.slice.action_cache_store.exists?(_cache_path)
