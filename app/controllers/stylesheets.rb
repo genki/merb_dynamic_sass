@@ -22,8 +22,8 @@ class MerbDynamicSass::Stylesheets < MerbDynamicSass::Application
   end
 
 
-  def index
-    @template_path = params[:path]
+  def index(path)
+    @template_path = path
     if self.slice.action_cache_store.exists?(_cache_path)
 
       m_template = File.mtime _location_of_template

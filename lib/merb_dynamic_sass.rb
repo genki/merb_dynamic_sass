@@ -106,5 +106,6 @@ if defined?(Merb::Plugins)
   # Add dependencies for other MerbDynamicSass classes below. Example:
   # dependency "merb_dynamic_sass/other"
   dependency "merb-cache"
+  dependency "merb-action-args"
   
 end
