@@ -35,6 +35,7 @@ class MerbDynamicSass::Stylesheets < MerbDynamicSass::Application
 
     end
 
+    self.content_type = :css
     self.slice.action_cache_store.fetch _cache_path do
       sass = render(:format => :css)
       Sass::Engine.new(sass).to_css

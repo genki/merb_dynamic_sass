@@ -32,6 +32,11 @@ h1
     response = request("/stylesheets/basic.css")
     response.status.should be_successful
     response.headers["Content-Type"].should == "text/css"
+
+    # doing twice to see the case when the cached file is exists.
+    response = request("/stylesheets/basic.css")
+    response.status.should be_successful
+    response.headers["Content-Type"].should == "text/css"
   end
 
 
