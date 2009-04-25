@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{merb_dynamic_sass}
-  s.version = "0.0.3"
+  s.version = "0.0.3.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Yukiko Kawamoto"]
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{Merb Dynamic Sass is a Merb Slice that provides more handy way to use Sass engine.}
   s.email = %q{yu0420@gmail.com}
   s.extra_rdoc_files = ["README", "LICENSE", "TODO"]
-  s.files = ["LICENSE", "README", "Rakefile", "TODO", "lib/merb_dynamic_sass", "lib/merb_dynamic_sass/merbtasks.rb", "lib/merb_dynamic_sass/slicetasks.rb", "lib/merb_dynamic_sass/spectasks.rb", "lib/merb_dynamic_sass.rb", "spec/merb_dynamic_sass_spec.rb", "spec/requests", "spec/requests/stylesheets_spec.rb", "spec/spec_helper.rb", "app/controllers", "app/controllers/application.rb", "app/controllers/stylesheets.rb", "app/helpers", "app/helpers/application_helper.rb", "app/views", "app/views/layout", "app/views/layout/merb_dynamic_sass.html.erb", "public/javascripts", "public/javascripts/master.js", "public/stylesheets", "public/stylesheets/master.css", "stubs/app", "stubs/app/controllers", "stubs/app/controllers/application.rb", "stubs/app/controllers/main.rb"]
+  s.files = ["LICENSE", "README", "Rakefile", "TODO", "lib/merb_dynamic_sass", "lib/merb_dynamic_sass/merbtasks.rb", "lib/merb_dynamic_sass/slicetasks.rb", "lib/merb_dynamic_sass/spectasks.rb", "lib/merb_dynamic_sass.rb", "spec/merb_dynamic_sass_spec.rb", "spec/requests", "spec/requests/stylesheets_spec.rb", "spec/spec_helper.rb", "app/controllers", "app/controllers/application.rb", "app/controllers/stylesheets.rb", "app/helpers", "app/helpers/application_helper.rb", "app/views", "app/views/layout", "app/views/layout/merb_dynamic_sass.html.erb", "app/views/stylesheets", "public/javascripts", "public/javascripts/master.js", "public/stylesheets", "public/stylesheets/master.css", "stubs/app", "stubs/app/controllers", "stubs/app/controllers/application.rb", "stubs/app/controllers/main.rb"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/yukiko}
   s.require_paths = ["lib"]
