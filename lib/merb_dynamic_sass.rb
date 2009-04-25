@@ -7,7 +7,7 @@ if defined?(Merb::Plugins)
 
   # Register the Slice for the current host application
   # * This slice is not intended to be used in production environment
-  Merb::Slices::register(__FILE__) unless Merb.environment == "production"
+  Merb::Slices::register(__FILE__)# unless Merb.environment == "production"
   
   # Slice configuration - set this in a before_app_loads callback.
   # By default a Slice uses its own layout, so you can swicht to 
@@ -22,17 +22,9 @@ if defined?(Merb::Plugins)
   module MerbDynamicSass
     
     # Slice metadata
-    def self.description
-      "MerbDynamicSass is a slice to provide more handy way to use Sass engine."
-    end
-
-    def self.version
-      "0.0.1"
-    end
-    
-    def self.author
-      "Yukiko Kawamoto"
-    end
+    self.description = "MerbDynamicSass is a slice to provide more handy way to use Sass engine."
+    self.version = "0.0.1"
+    self.author = "Yukiko Kawamoto"
     
     # Stub classes loaded hook - runs before LoadClasses BootLoader
     # right after a slice's classes have been loaded internally.
