@@ -22,9 +22,17 @@ if defined?(Merb::Plugins)
   module MerbDynamicSass
     
     # Slice metadata
-    self.description = "MerbDynamicSass is a slice to provide more handy way to use Sass engine."
-    self.version = "0.0.1"
-    self.author = "Yukiko Kawamoto"
+    def self.description
+      "MerbDynamicSass is a slice to provide more handy way to use Sass engine."
+    end
+
+    def self.version
+      "0.0.1"
+    end
+    
+    def self.author
+      "Yukiko Kawamoto"
+    end
     
     # Stub classes loaded hook - runs before LoadClasses BootLoader
     # right after a slice's classes have been loaded internally.
